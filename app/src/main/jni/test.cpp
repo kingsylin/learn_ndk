@@ -1,7 +1,7 @@
 #include <test.h>
 JNIEXPORT jstring JNICALL Java_org_witsoft_myapplication_MainActivity_helloJni
         (JNIEnv *env, jclass jobj) {
-    return (*env)->NewStringUTF(env,"Hello JNI!");
+    return env->NewStringUTF("Hello JNI!");
 }
 
 JNIEXPORT jint JNICALL Java_org_witsoft_myapplication_MainActivity_addCalc

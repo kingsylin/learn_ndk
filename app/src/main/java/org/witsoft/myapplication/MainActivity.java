@@ -1,5 +1,6 @@
 package org.witsoft.myapplication;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -22,5 +23,10 @@ public class MainActivity extends AppCompatActivity {
         System.out.println(helloJni());
 
         System.out.println(addCalc(1 , 2));
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 }
